@@ -1,0 +1,11 @@
+Drop real BMS Treats product and team photos in this folder, e.g.:
+
+cup-chocolate.jpg
+cup-red-velvet.jpg
+cup-cookies-cream.jpg
+cup-caramel.jpg
+tray-vanilla.jpg
+tray-chocolate.jpg
+founders.jpg
+
+Then update the <img> tags as described in README.md.

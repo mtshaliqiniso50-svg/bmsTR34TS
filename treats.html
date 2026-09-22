@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Treats — BMS Treats</title>
+<meta name="description" content="Explore BMS Treats' dessert cups and dessert trays — Chocolate, Red Velvet, Cookies & Cream, Caramel, Vanilla.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Caveat:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand-logo"><svg class="crown" viewBox="0 0 24 16" width="24" height="16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 14 L1 5 L6 9 L12 2 L18 9 L23 5 L22 14 Z" style="fill:var(--gold-light); stroke:var(--brown); stroke-width:1.2; stroke-linejoin:round;"/><circle cx="1" cy="4" r="1.5" style="fill:var(--gold-light); stroke:var(--brown); stroke-width:1;"/><circle cx="12" cy="1.4" r="1.5" style="fill:var(--gold-light); stroke:var(--brown); stroke-width:1;"/><circle cx="23" cy="4" r="1.5" style="fill:var(--gold-light); stroke:var(--brown); stroke-width:1;"/></svg><span class="word-bms">BMS</span><span class="word-treats">TREATS</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="treats.html" aria-current="page">Our Treats</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="retail.html">Retail Partners</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-whatsapp" data-wa-message="Hi BMS Treats! I'd like to place an order."><span class="btn-text">Order on</span> WhatsApp</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section style="padding-bottom: 40px;">
+    <div class="wrap">
+      <div class="section-head">
+        <h1>Our Treats</h1>
+        <p class="lede">Freshly prepared dessert cups and trays, made in small batches and kept chilled.</p>
+      </div>
+      <div class="product-tabs" role="tablist" aria-label="Filter treats">
+        <button class="tab-btn" data-target="all" aria-selected="true">All Treats</button>
+        <button class="tab-btn" data-target="cups" aria-selected="false">Dessert Cups</button>
+        <button class="tab-btn" data-target="trays" aria-selected="false">Dessert Trays</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-section" data-section="cups" style="padding-top: 0; padding-bottom: 24px;">
+    <div class="wrap">
+      <h2>Dessert Cups</h2>
+      <div class="product-grid" data-group="cups"></div>
+    </div>
+  </section>
+
+  <section class="product-section" data-section="trays" style="padding-top: 24px;">
+    <div class="wrap">
+      <h2>Dessert Trays</h2>
+      <div class="product-grid" data-group="trays"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap retail-band" style="padding: 56px 40px;">
+      <h2>Interested in Stocking BMS Treats?</h2>
+      <p class="lede">We're currently exploring retail partnerships and opportunities to supply our dessert products to local stores.</p>
+      <a href="retail.html" class="btn" style="background: var(--gold-light); color: var(--brown);">Become a Retail Partner</a>
+    </div>
+  </section>
+</main>
+
+<div id="product-modal" class="modal-overlay">
+  <div class="modal" id="product-modal-content" role="dialog" aria-modal="true"></div>
+</div>
+
+<div class="mobile-wa-bar">
+  <a class="btn btn-whatsapp btn-block" data-wa-message="Hi BMS Treats! I'd like to place an order.">Order on WhatsApp</a>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand brand-logo"><svg class="crown" viewBox="0 0 24 16" width="24" height="16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 14 L1 5 L6 9 L12 2 L18 9 L23 5 L22 14 Z" style="fill:var(--gold-light); stroke:var(--brown); stroke-width:1.2; stroke-linejoin:round;"/><circle cx="1" cy="4" r="1.5" style="fill:var(--gold-light); stroke:var(--brown); stroke-width:1;"/><circle cx="12" cy="1.4" r="1.5" style="fill:var(--gold-light); stroke:var(--brown); stroke-width:1;"/><circle cx="23" cy="4" r="1.5" style="fill:var(--gold-light); stroke:var(--brown); stroke-width:1;"/></svg><span class="word-bms">BMS</span><span class="word-treats">TREATS</span></div>
+        <div class="footer-tagline">Small Cups. Big Happiness.</div>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="treats.html">Our Treats</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="retail.html">Retail Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Order</h5>
+        <ul>
+          <li><a data-wa-message="Hi BMS Treats! I'd like to place an order.">WhatsApp: 069 179 6632</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 BMS Treats</span>
+      <span>Made with care in South Africa</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
